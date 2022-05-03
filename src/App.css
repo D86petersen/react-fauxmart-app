@@ -1,0 +1,25 @@
+*{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+i:hover{
+    color: red;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: red;
+    padding: .5rem;
+    transition: all 0.5s;
+  }
+  #border-shadow{
+box-shadow: 5px 5px 5px;
+  }
+  .text-shadow {
+    text-shadow: 3px 3px 3px #000000;
+  }
+  .text-shadow-navlinks {
+    text-shadow: 3px 3px 10px #000000;
+  }
+  #box-shadow {
+    box-shadow: 5px 5px 5px #464646;
+  }
