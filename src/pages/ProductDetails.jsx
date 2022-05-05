@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import Skeleton from 'react-loading-skeleton';
 // Created an arrow funtion named ProductDetails that sets the state of the product and the loading state
 const ProductDetails = () => {
 // used useParams to get the id from the url
@@ -12,6 +13,9 @@ const ProductDetails = () => {
     const [loading, setLoading] = useState(false);
 // Created useEffect with a function that will fetch the product data from the API by the id and setLoading to true until the data is fetched then set to
 // false 
+
+// created  useDispatch to dispatch the addToCart action
+   
     useEffect(() => {
         const getProduct = async () => {
             setLoading(true);
@@ -25,7 +29,16 @@ const ProductDetails = () => {
     const Loading = () => {
         return(
             <>
-            Loading.........
+            <div className="col-md-6">
+                <Skeleton height={400} />
+            </div>
+            <div className="col-md-6">
+                <Skeleton height={50} width={300} />
+                <Skeleton height={75} />
+                <Skeleton height={25} width={150} />
+                <Skeleton height={50}  />
+                <Skeleton height={150} />
+            </div>
             </>
         )
     }
@@ -50,14 +63,15 @@ const ProductDetails = () => {
                 {product.description}
             </p>
             
-            <button className="btn btn-outline-danger px-4 py-2">
+            <button className="btn btn-outline-danger px-4 py-2 mb-5">
             <i
                   className="fa fa-shopping-cart me-1"
                   aria-hidden="true"
+                  
                 ></i>
                 Add to Cart
             </button>
-            <NavLink to="/cart" className="btn btn-danger ms-2 px-3 py-2">
+            <NavLink to="/cart" className="btn btn-danger ms-2 px-3 py-2 mb-5">
             <i
                   className="fa fa-shopping-cart me-1"
                   aria-hidden="true"

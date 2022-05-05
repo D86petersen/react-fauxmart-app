@@ -61,11 +61,11 @@ const Products = () => {
     return (
       <>
         <div className="buttons d-flex justify-content-center mb-5 pb-5">
-          <button className="btn btn-outline-dark me-2" id="box-shadow" onClick={() => setFilter(data)}>All</button>
-          <button className="btn btn-outline-dark me-2" id="box-shadow" onClick={() => filterProducts("men's clothing")}>Men's Clothing</button>
-          <button className="btn btn-outline-dark me-2" id="box-shadow" onClick={() => filterProducts("women's clothing")}>Women's Clothing</button>
-          <button className="btn btn-outline-dark me-2" id="box-shadow" onClick={() => filterProducts("jewelery")}>Jewelery</button>
-          <button className="btn btn-outline-dark me-2" id="box-shadow" onClick={() => filterProducts("electronics")}>Electronics</button>
+          <button className="btn btn-outline-danger fw-bold me-2" id="box-shadow" onClick={() => setFilter(data)}>All</button>
+          <button className="btn btn-outline-danger fw-bold me-2" id="box-shadow" onClick={() => filterProducts("men's clothing")}>Men's Clothing</button>
+          <button className="btn btn-outline-danger fw-bold me-2" id="box-shadow" onClick={() => filterProducts("women's clothing")}>Women's Clothing</button>
+          <button className="btn btn-outline-danger fw-bold me-2" id="box-shadow" onClick={() => filterProducts("jewelery")}>Jewelery</button>
+          <button className="btn btn-outline-danger fw-bold me-2" id="box-shadow" onClick={() => filterProducts("electronics")}>Electronics</button>
         </div>
         {filter.map((product) => {
             return(
@@ -76,7 +76,7 @@ const Products = () => {
   <div className="card-body">
     <h5 className="card-title fw-bold">{product.title}</h5>
     <p className="card-text lead fw-bold">${product.price}</p>
-    <NavLink to={`/products/${product.id}`} className="btn btn-outline-dark" id="box-shadow">Buy Now</NavLink>
+    <NavLink to={`/products/${product.id}`} className="btn btn-outline-danger fw-bold" id="box-shadow">Buy Now</NavLink>
   </div>
 </div>
                 </div>
@@ -92,7 +92,7 @@ const Products = () => {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder text-center text-shadow-navlinks">
+            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
               Latest Arrivals
             </h1>
             <hr />

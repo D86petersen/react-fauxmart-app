@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import {Routes, Route} from 'react-router-dom';
 import Products from './components/Products';
 import ProductDetails from './pages/ProductDetails';
+import NotFound from './components/NotFound';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/products/:id" element={<ProductDetails />}/>
-      
+        <Route exact path="/cart" element={<Cart />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

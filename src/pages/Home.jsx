@@ -1,6 +1,6 @@
 // Imports
 import React from "react";
-import Products from "../components/Products";
+import { NavLink } from "react-router-dom";
 // Created Home Component that contains background image and Header text and Products Component
 const Home = () => {
   return (
@@ -16,13 +16,12 @@ const Home = () => {
             <div className="container">
           <h5 className="card-title display-3 fw-bolder mb-0 text-shadow" >New Arrivals For The Season</h5>
           <p className="card-text fs-2 text-shadow">
-           Check out our online only deals
+           Check out our Summer deals
           </p>
-          
+          <NavLink to="/products" className="btn btn-danger fs-3 fw-bold py-2 px-5">Shop Now!</NavLink>
           </div>
         </div>
       </div>
-      <Products />
     </div>
   );
 };
