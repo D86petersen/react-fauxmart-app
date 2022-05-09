@@ -1,6 +1,5 @@
 // Imports
 import React, { useEffect } from "react";
-import Skeleton from "react-loading-skeleton";
 import { NavLink } from "react-router-dom";
 // Created component named Products
 const Products = () => {
@@ -36,24 +35,19 @@ const Products = () => {
   const Loading = () => {
     return (
     <>
-    <div className="col-md-3">
-        <Skeleton height={300}/>
-    </div>
-    <div className="col-md-3">
-        <Skeleton height={300}/>
-    </div>
-    <div className="col-md-3">
-        <Skeleton height={300}/>
-    </div>
-    <div className="col-md-3">
-        <Skeleton height={300}/>
-    </div>
+    <div className="container d-flex justify-content-center">
+      <div className="row">
+        <div className="col-md-12 fs-1">
+          Loading.....
+        </div>
+        </div>
+      </div>
     </>
     );
   };
   // Created a function for displaying the products by mapping through the data and filter and returning a div with the product name and price and image
   const filterProducts = (cat) => {
-      const updatedList = data.filter((x) =>x.category === cat);
+      const updatedList = data.filter((x, id) =>x.category === cat);
         setFilter(updatedList);
   }
   // Created a function for displaying the products by filtered data

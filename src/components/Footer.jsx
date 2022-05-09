@@ -3,16 +3,16 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <footer class="footer mt-auto py-3 bg-light border-top border-3 fixed-bottom" id="border-shadow">
-                 <div class="container-fluid text-center" >
-                   <div class="row">
-                      <div class="col-12 col-md d-flex justify-content-center">
-                      <a class="text-dark mx-1" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                      <a class="text-dark mx-1" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                      <a class="text-dark mx-1" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                      <a class="text-dark mx-1" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <footer className="footer mt-auto py-3 bg-light border-top border-3" id="border-shadow">
+                 <div className="container-fluid text-center" >
+                   <div className="row">
+                      <div className="col-12 col-md d-flex justify-content-center">
+                      <a className="text-dark mx-1" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a className="text-dark mx-1" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a className="text-dark mx-1" href="#"><i className="fa fa-facebook-official" aria-hidden="true"></i></a>
+                      <a className="text-dark mx-1" href="#"><i className="fa fa-github" aria-hidden="true"></i></a>
                         </div>
-                      <span class="text-dark fw-bold">&copy;FauxMart 2022</span>
+                      <span className="text-dark fw-bold">&copy;FauxMart 2022</span>
                  </div>
                  </div>
              </footer>

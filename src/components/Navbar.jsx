@@ -1,8 +1,13 @@
 // Imports
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 // Created NavBar component with bootstrap styling that
 const Navbar = () => {
+  // imported context 
+  const { cart } = useContext(CartContext);
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-lg">
@@ -75,7 +80,7 @@ const Navbar = () => {
                   className="fa fa-shopping-cart me-1"
                   aria-hidden="true"
                 ></i>{" "}
-                Cart (0)
+                Cart ({cart.length})
               </NavLink>
             </div>
           </div>

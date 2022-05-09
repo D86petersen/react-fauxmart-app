@@ -23,3 +23,8 @@ box-shadow: 5px 5px 5px;
   #box-shadow {
     box-shadow: 5px 5px 5px #464646;
   }
+  #cartsubtotal{
+    font-size: 20px;
+    font-weight: bold;
+    
+  }

@@ -1,0 +1,21 @@
+import React from 'react'
+
+const About = () => {
+  return (
+    <div>
+          <div className="container my-5 py-5">
+        <div className="row">
+          <div className="col-md-12 ">
+            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+             About Our Company
+            </h1>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi doloribus dolorem odio quisquam corporis vel mollitia autem amet, deleniti soluta magni recusandae, incidunt dolore. Assumenda ab eius commodi neque vero officia voluptatibus placeat dolore recusandae laudantium unde quidem voluptate, nihil maxime porro impedit ullam quis obcaecati ad autem. Animi, aut iste officiis vel nostrum dolor incidunt consectetur cum nesciunt hic quaerat ipsum, omnis sapiente, repudiandae doloremque eius quod quam nam atque harum commodi adipisci quasi ratione. Laboriosam inventore minus, blanditiis reprehenderit totam veniam exercitationem placeat ab? Doloremque magnam expedita adipisci ipsum dolorem, voluptatem at distinctio neque assumenda voluptate atque maxime, voluptatibus corporis necessitatibus, fugiat consequatur esse ipsam accusamus! Doloribus ut temporibus nam consequatur atque pariatur placeat quas esse illum, reprehenderit harum. Temporibus, sed sequi inventore voluptas placeat, ad perferendis nobis quibusdam quo ratione dicta veritatis iusto vero eum! Placeat error quaerat corrupti incidunt illo, quod ea eius iusto vel repellat harum ipsam, dignissimos tempore provident consectetur quisquam officia quasi aliquid eaque cupiditate debitis laborum dolores? Quis autem commodi cum perspiciatis, nostrum dolor sunt maiores veniam aperiam hic maxime atque fuga sit quam ullam necessitatibus tenetur obcaecati at doloribus natus. Atque incidunt deleniti nisi? Numquam, exercitationem? Illo assumenda enim a corrupti voluptate distinctio dolor deleniti eaque doloribus eum, adipisci, eveniet quam asperiores magnam temporibus quas beatae autem vero amet ea? Unde reprehenderit iusto odio fuga a recusandae velit adipisci alias, nemo atque odit vero assumenda quos, vel voluptatibus sapiente non iste ullam sit consequuntur. Labore, dolorum! Cumque est expedita labore soluta consequuntur facilis dolor odio, dicta atque facere? Odio sint corrupti repudiandae dignissimos incidunt quas placeat, eius similique officiis sapiente possimus quibusdam mollitia excepturi alias harum minima aliquam cum temporibus minus! Totam consequatur et recusandae soluta enim officiis cupiditate, debitis similique voluptas! Quia earum, molestiae velit, a explicabo quisquam suscipit asperiores nisi sunt quae tempora? Ad, earum! Molestias itaque iusto aspernatur adipisci ad vitae harum. A repellendus nesciunt soluta quos nihil quaerat praesentium facilis repudiandae deserunt consectetur. Obcaecati placeat similique corrupti officiis temporibus natus aliquam distinctio quam nobis error, veniam cumque ad vel sunt magnam quae voluptate optio quis, omnis modi earum eum quas! Ad ea excepturi hic adipisci. Magnam distinctio architecto adipisci fuga, eos et eligendi praesentium nostrum culpa necessitatibus provident minus qui accusantium assumenda soluta incidunt quidem odio, libero velit eaque repellat ratione minima quia. Accusamus iste, dolore quaerat omnis sequi quis pariatur, id sed ex suscipit quisquam ipsum sapiente provident vel libero facilis nulla rem doloremque quas nemo earum! Deserunt nihil suscipit reprehenderit modi odit mollitia iusto, quod nulla in excepturi unde ad rem officia eius tempora voluptatem magni quis nemo eaque architecto temporibus itaque accusamus. Beatae saepe, veniam recusandae architecto eveniet, reiciendis corporis pariatur harum temporibus animi tempora accusamus dignissimos ipsa! Quas aspernatur at nisi molestias in inventore nemo voluptas ut tempore eligendi mollitia doloremque ex recusandae odit est quaerat, aperiam debitis fugiat esse exercitationem! Natus pariatur animi nulla magni facere, eveniet esse quidem fuga reprehenderit iure repellendus cupiditate consequatur quia doloribus atque hic unde sequi!</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  )
+}
+
+export default About
