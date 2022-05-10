@@ -87,7 +87,7 @@ const Products = () => {
         <div className="row">
           <div className="col-12 mb-5">
             <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
-              Latest Arrivals
+              Products
             </h1>
             <hr />
           </div>

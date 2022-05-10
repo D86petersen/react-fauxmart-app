@@ -31,7 +31,7 @@ const Contact = () => {
                         <label for="message">Message</label>
                         <textarea type="text" className="form-control" id="name" placeholder="Enter a message" />
                     </div>
-                    <button className="btn btn-danger mt-4 px-4 py-2" type="submit">Submit</button>
+                    <button className="btn btn-danger fw-bold mt-4 px-4 py-2" type="submit">Submit</button>
                 </form>
             </div>
           </div>

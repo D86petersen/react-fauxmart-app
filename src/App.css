@@ -5,12 +5,17 @@
 i:hover{
     color: red;
 }
+#text-transition:hover { 
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
 
-.navbar .navbar-nav .nav-link:hover{
-    color: red;
-    padding: .5rem;
-    transition: all 0.5s;
-  }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
   #border-shadow{
 box-shadow: 5px 5px 5px;
   }
@@ -20,8 +25,10 @@ box-shadow: 5px 5px 5px;
   .text-shadow-navlinks {
     text-shadow: 3px 3px 10px #000000;
   }
+  
   #box-shadow {
     box-shadow: 5px 5px 5px #464646;
+    border-radius: 20%;
   }
   #cartsubtotal{
     font-size: 20px;

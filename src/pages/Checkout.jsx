@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Checkout = () => {
   const { cart } = useContext(CartContext);
@@ -14,7 +14,8 @@ const Checkout = () => {
     const [cart, setCart] = useState([])
     setCart([])
   }
-  
+  // return the checkout state with the cart state and display a total price and a credit card form that when clicked clears the cart state and sends back 
+  // to the products page
   return (
     <div>
         <div className="container my-5 py-5">
@@ -31,9 +32,10 @@ const Checkout = () => {
           <div className="col-md-6">
           {cart.map((item, index) => (
           <div className="container p-5">
-            <div className="row">
+            <div className="row border border-3 p-3" id="box-shadow">
               <div className="col-md-2" key={index}>
                 <img
+                className="img-fluid mt-2"
                   src={item.image}
                   alt={item.title}
                   height="100px"
@@ -55,7 +57,7 @@ const Checkout = () => {
         ))}
         <div className="container border-top p-5">
           <div className="row">
-            <div className="col-md-12 text-end fs-3 fw-bold d-flex flex-column align-items-end">
+            <div className="col-md-12 text-end fs-2 fw-bold d-flex flex-column align-items-end">
               <hr />
               Total: ${subTotal.toFixed(2)}
               
@@ -64,7 +66,7 @@ const Checkout = () => {
               </div>
           </div>
           
-      <div class="col-md-6 container-fluid bg-default d-flex justify-content-end ">
+      <div class="col-md-6 container bg-default d-flex justify-content-end ">
         <form>
           <div class="form-row">
             <h4 class="my-4">Billing Address</h4>
@@ -143,16 +145,16 @@ const Checkout = () => {
             <input
               type="checkbox"
               class="form-check-input"
-              id="shipping-adress"
+              id="shipping-address"
             />
             Shipping address is the same as my billing address
-            <label for="shipping-adress" class="form-check-label"></label>
+            <label for="shipping-address" class="form-check-label"></label>
           </div>
 
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="same-adress" />
             Save this information for next time
-            <label for="same-adress" class="form-check-label"></label>
+            <label for="same-address" class="form-check-label"></label>
           </div>
 
           <hr />
@@ -253,7 +255,7 @@ const Checkout = () => {
 
           <hr class="mb-3" />
 
-          <NavLink to="/products" className="btn btn-danger col-md-2 fw-bold justify-content-end mt-3 mb-4" type="submit" onClick={ClearCart}>Checkout</NavLink>
+          <NavLink to="/products" className="btn btn-danger col-md-2 fw-bold justify-content-end mt-3 mb-4" id="box-shadow" type="submit" onClick={ClearCart}>Checkout</NavLink>
         </form>
       </div>
       </div>
