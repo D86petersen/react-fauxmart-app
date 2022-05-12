@@ -5,7 +5,7 @@ const Login = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 d-flex flex-column align-items-center mt-5 border mb-5" id="box-shadow">
-        <h1 className="display-3 fw-bolder text-center text-shadow-navlinks mt-5">Login</h1>
+        <h1 className="display-3 fw-bolder text-center text-danger text-shadow-navlinks mt-5">Login</h1>
       <form>
         <label className="mt-5 mb-3 fw-bold fs-5">Username:</label>
         <input type="text" placeholder="Username" />

@@ -15,10 +15,10 @@ const Home = () => {
         <div className="card-img-overlay d-flex justify-content-center flex-column ">
           <div className="container">
             <h5 className="card-title display-3 fw-bolder text-danger mb-0 text-shadow">
-              New Arrivals For The Season
+              Summer Time Is Upon Us
             </h5>
             <p className="card-text fs-1 text-shadow">
-              Check out our Summer deals
+              Check out our <span className="text-danger fw-bold display-3">NOT REAL</span> deals!
             </p>
             <NavLink
               to="/products"

@@ -16,7 +16,7 @@ const Navbar = () => {
             className="navbar-brand fw-bold fs-1 text-danger text-shadow"
             to="/"
           >
-            FauxMart
+            <img src="/assets/logo.png" alt="logo" height="100px"/>
           </NavLink>
           <button
             className="navbar-toggler"

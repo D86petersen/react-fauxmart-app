@@ -69,7 +69,7 @@ const Products = () => {
   <img src={product.image} class="card-img-top" alt={product.title} height="250px"/>
   <div className="card-body">
     <h5 className="card-title fw-bold">{product.title}</h5>
-    <p className="card-text lead fw-bold">${product.price}</p>
+    <p className="card-text lead fw-bold">${product.price.toFixed(2)}</p>
     <NavLink to={`/products/${product.id}`} className="btn btn-outline-danger fw-bold" id="box-shadow">Buy Now</NavLink>
   </div>
 </div>
@@ -86,8 +86,8 @@ const Products = () => {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
-              Products
+            <h1 className="display-3 fw-bolder text-center text-danger text-shadow-navlinks">
+              Not Real Merch
             </h1>
             <hr />
           </div>

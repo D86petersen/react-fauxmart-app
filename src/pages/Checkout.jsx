@@ -21,13 +21,14 @@ const Checkout = () => {
         <div className="container my-5 py-5">
         <div className="row">
           <div className="col-md-12 ">
-            <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+            <h1 className="display-3 fw-bolder text-center text-danger text-shadow-navlinks">
               Checkout
             </h1>
             <hr />
           </div>
         </div>
         </div>
+       
         <div className="row">
           <div className="col-md-6">
           {cart.map((item, index) => (
@@ -69,7 +70,7 @@ const Checkout = () => {
       <div class="col-md-6 container bg-default d-flex justify-content-end ">
         <form>
           <div class="form-row">
-            <h4 class="my-4">Billing Address</h4>
+            <h4 class="my-4 fw-bold">Billing Address:</h4>
             <div class="col-md-4 form-group">
               <label for="firstname">First Name</label>
               <input
@@ -159,7 +160,7 @@ const Checkout = () => {
 
           <hr />
 
-          <h4 class="mb-4">Payment</h4>
+          <h4 class="mb-4 fw-bold">Payment:</h4>
 
           <div class="form-check">
             <input
@@ -262,5 +263,6 @@ const Checkout = () => {
     </div>
   );
 };
+
 
 export default Checkout;

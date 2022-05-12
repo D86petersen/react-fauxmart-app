@@ -20,7 +20,7 @@ const Cart = (item) => {
         <div className="container my-5 py-5">
           <div className="row">
             <div className="col-12 mb-5">
-              <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+              <h1 className="display-3 fw-bolder text-center text-danger text-shadow-navlinks">
                 Cart
               </h1>
               <hr />
@@ -49,10 +49,10 @@ const Cart = (item) => {
   } else {
     return (
       <div>
-        <div className="container my-5 py-5">
+        <div className="container text-danger my-5 py-5">
           <div className="row">
             <div className="col-12 mb-5">
-              <h1 className="display-3 fw-bolder text-center text-shadow-navlinks">
+              <h1 className="display-3 fw-bolder text-center text-danger text-shadow-navlinks">
                 Cart
               </h1>
               <hr />
